@@ -1,7 +1,7 @@
 import SwiftUI
 
 @available(iOS 13.0.0, *)
-public struct PartTwoView: View {
+public struct ColorPickerPartTwoView: View {
     @State private var isRedSwitchOn = false
     @State private var isGreenSwitchOn = false
     @State private var isBlueSwitchOn = false
@@ -29,6 +29,6 @@ public struct PartTwoView: View {
 @available(iOS 13.0.0, *)
 public struct PartTwoView_Previews: PreviewProvider {
     public static var previews: some View {
-        PartTwoView()
+        ColorPickerPartTwoView()
     }
 }

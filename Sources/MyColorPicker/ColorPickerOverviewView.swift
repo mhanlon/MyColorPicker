@@ -7,19 +7,19 @@ public struct ColorPickerOverviewView: View {
 
     public var body: some View {
         TabView { 
-            PartOneView()
+            ColorPickerPartOneView()
                 .tabItem { 
                     Image(systemName: "1.circle")
                 }
-            PartTwoView()
+            ColorPickerPartTwoView()
                 .tabItem { 
                     Image(systemName: "2.circle")
                 }
-            PartThreeView()
+            ColorPickerPartThreeView()
                 .tabItem { 
                     Image(systemName: "3.circle")
                 }
-            PartFourView()
+            ColorPickerPartFourView()
                 .tabItem { 
                     Image(systemName: "4.circle")
                 }

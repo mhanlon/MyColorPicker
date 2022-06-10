@@ -1,7 +1,7 @@
 import SwiftUI
 
 @available(iOS 13.0.0, *)
-public struct PartOneView: View {
+public struct ColorPickerPartOneView: View {
     @Environment(\.colorScheme) var colorScheme
     private var color: Color {
         isFirstSwitchOn ? .red : defaultColor
