@@ -1,6 +1,3 @@
-import SwiftUI
-
-
 /// #Part One
 /// Use a toggle to change the fill color of a shape
 /// Learn about @State for our binding, because we're ///changing the value of the isToggled variable

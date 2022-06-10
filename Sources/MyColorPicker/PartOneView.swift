@@ -1,6 +1,7 @@
 import SwiftUI
 
-struct PartOneView: View {
+@available(iOS 13.0.0, *)
+public struct PartOneView: View {
     @Environment(\.colorScheme) var colorScheme
     private var color: Color {
         isFirstSwitchOn ? .red : defaultColor
@@ -12,7 +13,9 @@ struct PartOneView: View {
         ( colorScheme == .dark ) ? .black : .white
     }
     
-    var body: some View {
+    public init() {}
+    
+    public var body: some View {
         VStack {
             RoundedRectangle(cornerRadius: 10)
                 .fill(color)

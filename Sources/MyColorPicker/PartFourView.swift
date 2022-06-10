@@ -1,6 +1,7 @@
 import SwiftUI
 
-struct PartFourView: View {
+@available(iOS 15.0.0, *)
+public struct PartFourView: View {
     @State private var isRedSwitchOn = false
     @State private var isGreenSwitchOn = false
     @State private var isBlueSwitchOn = false
@@ -12,7 +13,7 @@ struct PartFourView: View {
         Color(red: redValue, green: greenValue, blue: blueValue)
     }
         
-    var body: some View {
+    public var body: some View {
         VStack {
             RoundedRectangle(cornerRadius: 10)
                 .fill(color)
@@ -48,8 +49,9 @@ struct PartFourView: View {
     }
 }
 
-struct PartFourView_Previews: PreviewProvider {
-    static var previews: some View {
+@available(iOS 15.0.0, *)
+public struct PartFourView_Previews: PreviewProvider {
+    public static var previews: some View {
         PartFourView()
     }
 }

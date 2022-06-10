@@ -17,4 +17,3 @@ A package that implements the [Develop in Swift Explorations](http://apple.co/de
  # Part Four
  * We add a reset button
  * We also add a tintColor to all our switches and sliders
-# MyColorPicker

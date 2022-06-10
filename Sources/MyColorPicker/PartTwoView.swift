@@ -1,6 +1,7 @@
 import SwiftUI
 
-struct PartTwoView: View {
+@available(iOS 13.0.0, *)
+public struct PartTwoView: View {
     @State private var isRedSwitchOn = false
     @State private var isGreenSwitchOn = false
     @State private var isBlueSwitchOn = false
@@ -10,7 +11,9 @@ struct PartTwoView: View {
                 isRedSwitchOn ? 1.0 : 0.0, green: isGreenSwitchOn ? 1.0 : 0.0, blue: isBlueSwitchOn ? 1.0 : 0.0)
     }
     
-    var body: some View {
+    public init() {}
+    
+    public var body: some View {
         VStack {
             RoundedRectangle(cornerRadius: 10)
                 .fill(color)
@@ -23,8 +26,9 @@ struct PartTwoView: View {
     }
 }
 
-struct PartTwoView_Previews: PreviewProvider {
-    static var previews: some View {
+@available(iOS 13.0.0, *)
+public struct PartTwoView_Previews: PreviewProvider {
+    public static var previews: some View {
         PartTwoView()
     }
 }

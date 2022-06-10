@@ -1,10 +1,13 @@
 import SwiftUI
 
-struct ColorPickerView: View {
+@available(iOS 14.0, *)
+public struct ColorPickerView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var color: Color = .white
     
-    var body: some View {
+    public init() {}
+
+    public var body: some View {
         VStack {
             RoundedRectangle(cornerRadius: 10)
                 .fill(color)
@@ -19,6 +22,7 @@ struct ColorPickerView: View {
     }
 }
 
+@available(iOS 14.0, *)
 struct ColorPickerView_Previews: PreviewProvider {
     static var previews: some View {
         ColorPickerView()
